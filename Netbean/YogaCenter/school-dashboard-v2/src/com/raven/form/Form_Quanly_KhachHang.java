@@ -5,10 +5,10 @@ import java.awt.Color;
 import javax.swing.JOptionPane;
 import javax.swing.ListCellRenderer;
 
-public class Form1 extends javax.swing.JPanel {
+public class Form_Quanly_KhachHang extends javax.swing.JPanel {
     
 
-    public Form1() {
+    public Form_Quanly_KhachHang() {
         initComponents();
         setOpaque(false);
         txtNgayDangki.setBackground(new java.awt.Color(0, 0, 0, 1));

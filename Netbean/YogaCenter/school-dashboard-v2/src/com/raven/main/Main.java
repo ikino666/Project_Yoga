@@ -4,7 +4,7 @@ import com.raven.component.Header;
 import com.raven.component.Menu;
 import com.raven.event.EventMenuSelected;
 import com.raven.event.EventShowPopupMenu;
-import com.raven.form.Form1;
+import com.raven.form.Form_Quanly_KhachHang;
 import com.raven.form.Form_Home;
 import com.raven.form.MainForm;
 import com.raven.swing.MenuItem;
@@ -51,7 +51,7 @@ public class Main extends javax.swing.JFrame {
                     if (subMenuIndex == 0) {
                         main.showForm(new Form_Home());
                     } else if (subMenuIndex == 1) {
-                        main.showForm(new Form1());
+                        main.showForm(new Form_Quanly_KhachHang());
                     }
                 }
             }

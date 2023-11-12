@@ -17,7 +17,7 @@ public class PanelTransparent extends JPanel {
         repaint();
     }
 
-    private float transparent = 0.2f;
+    private float transparent = 0.4f;
 
     public PanelTransparent() {
         setOpaque(false);

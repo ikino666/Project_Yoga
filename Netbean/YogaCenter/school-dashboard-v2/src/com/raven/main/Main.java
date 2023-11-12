@@ -12,6 +12,7 @@ import com.raven.swing.PopupMenu;
 import com.raven.swing.icon.GoogleMaterialDesignIcons;
 import com.raven.swing.icon.IconFontSwing;
 import com.formdev.flatlaf.FlatLightLaf;
+import com.raven.form.Form_HoaDon;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -49,9 +50,11 @@ public class Main extends javax.swing.JFrame {
                 System.out.println("Menu Index : " + menuIndex + " SubMenu Index " + subMenuIndex);
                 if (menuIndex == 0) {
                     if (subMenuIndex == 0) {
-                        main.showForm(new Form_Home());
+                        main.showForm(new Form_HoaDon());
                     } else if (subMenuIndex == 1) {
                         main.showForm(new Form_Quanly_KhachHang());
+                    }else if (subMenuIndex == 2) {
+                        main.showForm(new Form_Home());
                     }
                 }
             }

@@ -39,7 +39,7 @@ public class Table extends JTable {
                     ModelProfile data = (ModelProfile) o;
                     Profile cell = new Profile(data);
                     if (selected) {
-                        cell.setBackground(new Color(233,233,233));
+                        cell.setBackground(new Color(255,100,255));
                     } else {
                         cell.setBackground(Color.WHITE);
                     }
@@ -49,7 +49,7 @@ public class Table extends JTable {
                     ModelAction data = (ModelAction) o;
                     Action cell = new Action(data);
                     if (selected) {
-                        cell.setBackground(new Color(233,233,233));
+                        cell.setBackground(new Color(255,100,255));
                     } else {
                         cell.setBackground(Color.WHITE);
                     }

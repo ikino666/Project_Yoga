@@ -2,8 +2,8 @@ package com.raven.main;
 
 import com.raven.component.Header;
 import com.raven.component.Menu;
-import com.raven.event.EventMenuSelected;
-import com.raven.event.EventShowPopupMenu;
+import z.event.EventMenuSelected;
+import z.event.EventShowPopupMenu;
 import com.raven.form.Form_Quanly_KhachHang;
 import com.raven.form.Form_Home;
 import com.raven.form.MainForm;
@@ -12,7 +12,17 @@ import com.raven.swing.PopupMenu;
 import com.raven.swing.icon.GoogleMaterialDesignIcons;
 import com.raven.swing.icon.IconFontSwing;
 import com.formdev.flatlaf.FlatLightLaf;
+import com.raven.form.Form_GoiDichVu;
 import com.raven.form.Form_HoaDon;
+import com.raven.form.Form_KhoSanPham;
+import com.raven.form.Form_KhuyenMai;
+import com.raven.form.Form_LichSuHoaDon;
+import com.raven.form.Form_NguoiDung;
+import com.raven.form.Form_Quanly_HocVien;
+import com.raven.form.Form_Quanly_KhoaHoc;
+import com.raven.form.Form_Quanly_LopHoc;
+import com.raven.form.Form_SanPham;
+import com.raven.form.Form_TaiKhoan;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -49,13 +59,59 @@ public class Main extends javax.swing.JFrame {
             public void menuSelected(int menuIndex, int subMenuIndex) {
                 System.out.println("Menu Index : " + menuIndex + " SubMenu Index " + subMenuIndex);
                 if (menuIndex == 0) {
-                    if (subMenuIndex == 0) {
+                    if (subMenuIndex == 0) {            //Hóa đơn
                         main.showForm(new Form_HoaDon());
-                    } else if (subMenuIndex == 1) {
-                        main.showForm(new Form_Quanly_KhachHang());
-                    }else if (subMenuIndex == 2) {
+                    } else if (subMenuIndex == 1) {     //Lịch sử hóa đơn
+                        main.showForm(new Form_LichSuHoaDon());
+                    } else if (subMenuIndex == 2) {      //Thống kê
                         main.showForm(new Form_Home());
                     }
+                }
+                if (menuIndex == 1) {
+                    if (subMenuIndex == 0) {            //Sản phẩm
+                        main.showForm(new Form_SanPham());
+                    } else if (subMenuIndex == 1) {     //Kho sản phẩm
+                        main.showForm(new Form_KhoSanPham());
+                    } else if (subMenuIndex == 2) {      //Thống kê
+                        main.showForm(new Form_Home());
+                    }
+                }
+                if (menuIndex == 2) {
+                    if (subMenuIndex == 0) {            //Gói dịch vụ
+                        main.showForm(new Form_GoiDichVu());
+                    } else if (subMenuIndex == 1) {     //Khuyến mãi
+                        main.showForm(new Form_KhuyenMai());
+                    }
+                }
+                if (menuIndex == 3) {
+                    if (subMenuIndex == 0) {            //Khóa học
+                        main.showForm(new Form_Quanly_KhoaHoc());
+                    } else if (subMenuIndex == 1) {     //Thống kê
+                        main.showForm(new Form_Home());
+                    }
+                }
+                if (menuIndex == 4) {
+                    if (subMenuIndex == 0) {            //Lớp học
+                        main.showForm(new Form_Quanly_LopHoc());
+                    }  else if (subMenuIndex == 1) {     //Học viên
+                        main.showForm(new Form_Quanly_HocVien());
+                    }else if (subMenuIndex == 2) {     //Thống kê
+                        main.showForm(new Form_Home());
+                    }
+                }
+                if (menuIndex == 5) {
+                    if (subMenuIndex == 0) {            //Khách hàng
+                        main.showForm(new Form_Quanly_KhachHang());
+
+                    } else if (subMenuIndex == 1) {     //Thống kê
+                        main.showForm(new Form_Home());
+                    }
+                }
+                if (menuIndex == 6) {           //Người dùng
+                    main.showForm(new Form_NguoiDung());
+                }
+                if (menuIndex == 7) {           //Tài khoản
+                    main.showForm(new Form_TaiKhoan());
                 }
             }
         });
@@ -177,10 +233,10 @@ public class Main extends javax.swing.JFrame {
             @Override
             public void run() {
                 try {
-            UIManager.setLookAndFeel(new FlatLightLaf());
-        } catch (Exception ex) {
-            System.err.println("Failed to initialize LaF");
-        }
+                    UIManager.setLookAndFeel(new FlatLightLaf());
+                } catch (Exception ex) {
+                    System.err.println("Failed to initialize LaF");
+                }
                 SwingAcrylic.prepareSwing();
                 Main frame = new Main();
                 frame.setVisible(true);

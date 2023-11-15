@@ -1,6 +1,6 @@
 package com.raven.form;
 
-import com.raven.dialog.Message;
+import z.dialog.Message;
 import com.raven.main.Main;
 import com.raven.model.ModelCard;
 import com.raven.model.ModelStudent;

@@ -1,4 +1,4 @@
-package com.raven.dialog;
+package z.dialog;
 
 import com.raven.swing.icon.GoogleMaterialDesignIcons;
 import com.raven.swing.icon.IconFontSwing;

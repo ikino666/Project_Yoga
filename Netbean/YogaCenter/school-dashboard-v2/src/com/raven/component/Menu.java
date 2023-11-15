@@ -1,8 +1,8 @@
 package com.raven.component;
 
-import com.raven.event.EventMenu;
-import com.raven.event.EventMenuSelected;
-import com.raven.event.EventShowPopupMenu;
+import z.event.EventMenu;
+import z.event.EventMenuSelected;
+import z.event.EventShowPopupMenu;
 import com.raven.model.ModelMenu;
 import com.raven.swing.MenuAnimation;
 import com.raven.swing.MenuItem;
@@ -55,9 +55,9 @@ public class Menu extends PanelTransparent {
         addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/raven/icon/1.png")), "Quản lý sản phẩm", "Sản phẩm", "Kho sản phẩm", "Thống kê"));
         addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/raven/icon/6.png")), "Quản lý gói dịch vụ", "Dịch vụ", "Khuyến mãi"));
         addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/raven/icon/3.png")), "Quản lý khóa học","Khóa học", "Thống kê"));
-        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/raven/icon/4.png")), "Quản lý lớp học","Lớp học", "Thống kê"));
+        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/raven/icon/4.png")), "Quản lý lớp học","Lớp học","Học viên", "Thống kê"));
         addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/raven/icon/5.png")), "Quản lý khách hàng","Khách hàng", "Thống kê"));
-        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/raven/icon/7.png")), "Quản lý người dùng","Tài khoản", "Huấn luyện viên"));
+        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/raven/icon/7.png")), "Quản lý người dùng"));
         addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/raven/icon/8.png")), "Tài khoản"));
     }
 

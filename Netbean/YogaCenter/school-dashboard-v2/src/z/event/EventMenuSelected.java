@@ -1,4 +1,4 @@
-package com.raven.event;
+package z.event;
 
 public interface EventMenuSelected {
 

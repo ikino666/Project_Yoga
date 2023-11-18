@@ -51,14 +51,14 @@ public class Menu extends PanelTransparent {
     }
 
     public void initMenuItem() {
-       addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/raven/icon/2.png")), "Quản lý hóa đơn","Hóa đơn", "Lịch sử hóa đơn", "Thống kê doanh thu"));
-        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/raven/icon/1.png")), "Quản lý sản phẩm", "Sản phẩm", "Kho sản phẩm", "Thống kê"));
-        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/raven/icon/6.png")), "Quản lý gói dịch vụ", "Dịch vụ", "Khuyến mãi"));
-        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/raven/icon/3.png")), "Quản lý khóa học","Khóa học", "Thống kê"));
-        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/raven/icon/4.png")), "Quản lý lớp học","Lớp học","Học viên", "Thống kê"));
-        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/raven/icon/5.png")), "Quản lý khách hàng","Khách hàng", "Thống kê"));
-        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/raven/icon/7.png")), "Quản lý người dùng"));
-        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/raven/icon/8.png")), "Tài khoản"));
+       addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/yoga/icon/2.png")), "Quản lý hóa đơn","Hóa đơn", "Lịch sử hóa đơn", "Thống kê doanh thu"));
+        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/yoga/icon/1.png")), "Quản lý sản phẩm", "Sản phẩm", "Kho sản phẩm", "Thống kê"));
+        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/yoga/icon/6.png")), "Quản lý gói dịch vụ", "Dịch vụ", "Khuyến mãi"));
+        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/yoga/icon/3.png")), "Quản lý khóa học","Khóa học", "Thống kê"));
+        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/yoga/icon/4.png")), "Quản lý lớp học","Lớp học","Học viên", "Thống kê"));
+        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/yoga/icon/5.png")), "Quản lý khách hàng","Khách hàng", "Thống kê"));
+        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/yoga/icon/7.png")), "Quản lý người dùng"));
+        addMenu(new ModelMenu(new ImageIcon(getClass().getResource("/com/yoga/icon/8.png")), "Tài khoản"));
     }
 
     private void addMenu(ModelMenu menu) {

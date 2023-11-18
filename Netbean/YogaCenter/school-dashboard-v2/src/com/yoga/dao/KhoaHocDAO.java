@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.sql.*;
 
+
 public class KhoaHocDAO implements YogaCenterDAO<KhoaHoc, Integer> {
 
     String INSERT_SQL = "";

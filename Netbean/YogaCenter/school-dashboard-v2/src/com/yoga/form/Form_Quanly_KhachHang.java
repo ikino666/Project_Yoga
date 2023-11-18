@@ -34,7 +34,7 @@ public class Form_Quanly_KhachHang extends javax.swing.JPanel {
         cboFilter = new javax.swing.JComboBox<>();
         cboSearch = new javax.swing.JComboBox<>();
         txtSearch = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
+        btnSearch = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         panelTransparent3 = new z.swing.PanelTransparent();
         jLabel2 = new javax.swing.JLabel();
@@ -95,7 +95,7 @@ public class Form_Quanly_KhachHang extends javax.swing.JPanel {
             }
         });
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/icon_Search.png"))); // NOI18N
+        btnSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/yoga/icon/icon_Search.png"))); // NOI18N
 
         javax.swing.GroupLayout panelTransparent2Layout = new javax.swing.GroupLayout(panelTransparent2);
         panelTransparent2.setLayout(panelTransparent2Layout);
@@ -114,7 +114,7 @@ public class Form_Quanly_KhachHang extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel11)))
+                        .addComponent(btnSearch)))
                 .addContainerGap())
         );
         panelTransparent2Layout.setVerticalGroup(
@@ -129,10 +129,10 @@ public class Form_Quanly_KhachHang extends javax.swing.JPanel {
                             .addComponent(jLabel10)
                             .addComponent(cboSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING))
+                    .addComponent(btnSearch, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
         jLabel1.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
@@ -387,6 +387,7 @@ public class Form_Quanly_KhachHang extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLuu;
+    private javax.swing.JLabel btnSearch;
     private javax.swing.JButton btnThemMoi;
     private javax.swing.JButton btnXoa;
     private javax.swing.ButtonGroup buttonGroup1;
@@ -395,7 +396,6 @@ public class Form_Quanly_KhachHang extends javax.swing.JPanel {
     private javax.swing.JComboBox<String> cboSearch;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

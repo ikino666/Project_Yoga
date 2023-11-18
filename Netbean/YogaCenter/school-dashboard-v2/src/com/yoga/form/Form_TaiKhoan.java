@@ -64,7 +64,7 @@ public Form_TaiKhoan() {
 
         imageAvatar1.setForeground(new java.awt.Color(240, 240, 240));
         imageAvatar1.setBorderSize(3);
-        imageAvatar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/profile.jpg"))); // NOI18N
+        imageAvatar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/yoga/icon/profile1.jpg"))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel2.setText("User name");

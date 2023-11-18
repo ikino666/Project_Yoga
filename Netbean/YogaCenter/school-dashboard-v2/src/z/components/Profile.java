@@ -15,7 +15,7 @@ public class Profile extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(30, 30, 30));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/logo_45px.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/yoga/icon/logo_45px.png"))); // NOI18N
         jLabel1.setText("Yoga Center");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

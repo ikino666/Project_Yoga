@@ -64,7 +64,7 @@ public class Main extends javax.swing.JFrame {
                     } else if (subMenuIndex == 1) {     //Lịch sử hóa đơn
                         main.showForm(new Form_LichSuHoaDon());
                     } else if (subMenuIndex == 2) {      //Thống kê
-                        main.showForm(new Form_Home());
+//                        main.showForm(new Form_Home());
                     }
                 }
                 if (menuIndex == 1) {
@@ -73,7 +73,7 @@ public class Main extends javax.swing.JFrame {
                     } else if (subMenuIndex == 1) {     //Kho sản phẩm
                         main.showForm(new Form_KhoSanPham());
                     } else if (subMenuIndex == 2) {      //Thống kê
-                        main.showForm(new Form_Home());
+//                        main.showForm(new Form_Home());
                     }
                 }
                 if (menuIndex == 2) {
@@ -87,7 +87,7 @@ public class Main extends javax.swing.JFrame {
                     if (subMenuIndex == 0) {            //Khóa học
                         main.showForm(new Form_Quanly_KhoaHoc());
                     } else if (subMenuIndex == 1) {     //Thống kê
-                        main.showForm(new Form_Home());
+//                        main.showForm(new Form_Home());
                     }
                 }
                 if (menuIndex == 4) {
@@ -96,7 +96,7 @@ public class Main extends javax.swing.JFrame {
                     }  else if (subMenuIndex == 1) {     //Học viên
                         main.showForm(new Form_Quanly_HocVien());
                     }else if (subMenuIndex == 2) {     //Thống kê
-                        main.showForm(new Form_Home());
+//                        main.showForm(new Form_Home());
                     }
                 }
                 if (menuIndex == 5) {
@@ -104,7 +104,7 @@ public class Main extends javax.swing.JFrame {
                         main.showForm(new Form_Quanly_KhachHang());
 
                     } else if (subMenuIndex == 1) {     //Thống kê
-                        main.showForm(new Form_Home());
+//                        main.showForm(new Form_Home());
                     }
                 }
                 if (menuIndex == 6) {           //Người dùng
@@ -167,7 +167,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
         //  Start with this form
-        main.showForm(new Form_Home());
+        main.showForm(new Form_HoaDon());
     }
 
     @SuppressWarnings("unchecked")
@@ -182,22 +182,28 @@ public class Main extends javax.swing.JFrame {
         bg.setLayout(bgLayout);
         bgLayout.setHorizontalGroup(
             bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1366, Short.MAX_VALUE)
+            .addGap(0, 1354, Short.MAX_VALUE)
         );
         bgLayout.setVerticalGroup(
             bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 783, Short.MAX_VALUE)
+            .addGap(0, 771, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(bg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(bg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();

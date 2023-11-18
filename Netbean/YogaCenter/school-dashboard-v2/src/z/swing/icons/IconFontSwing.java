@@ -28,10 +28,10 @@ public final class IconFontSwing {
         }
     }
 
-    public static synchronized final Font buildFont(String fontFamily) {
+    public static synchronized final Font buildFont(String fontFa) {
         try {
             for (IconFont iconFont : IconFontSwing.fonts) {
-                if (iconFont.getFontFamily().equals(fontFamily)) {
+                if (iconFont.getFontFamily().equals(fontFa)) {
                     return Font.createFont(Font.TRUETYPE_FONT, iconFont.getFontInputStream());
                 }
             }
@@ -41,11 +41,12 @@ public final class IconFontSwing {
         }
 
         Logger.getLogger(IconFontSwing.class.getName()).log(Level.SEVERE,
-                "Font not found: " + fontFamily);
-        throw new IllegalArgumentException("Font not found: " + fontFamily);
+                "Font not found: " + fontFa);
+        throw new IllegalArgumentException("Font not found: " + fontFa);
     }
 
     private IconFontSwing() {
+        
     }
 
     public static Image buildImage(IconCode iconCode, float size) {

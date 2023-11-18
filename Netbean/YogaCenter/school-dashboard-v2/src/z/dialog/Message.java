@@ -1,7 +1,7 @@
 package z.dialog;
 
-import com.raven.swing.icon.GoogleMaterialDesignIcons;
-import com.raven.swing.icon.IconFontSwing;
+import z.swing.icons.GoogleMaterialDesignIcons;
+import z.swing.icons.IconFontSwing;
 import java.awt.Color;
 import org.jdesktop.animation.timing.Animator;
 import org.jdesktop.animation.timing.TimingTarget;
@@ -62,8 +62,8 @@ public class Message extends javax.swing.JDialog {
 
         jPanel1 = new javax.swing.JPanel();
         lbMessage = new javax.swing.JLabel();
-        button2 = new com.raven.swing.Button();
-        button1 = new com.raven.swing.Button();
+        button2 = new z.swing.Button();
+        button1 = new z.swing.Button();
         lbIcon = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -158,8 +158,8 @@ public class Message extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.raven.swing.Button button1;
-    private com.raven.swing.Button button2;
+    private z.swing.Button button1;
+    private z.swing.Button button2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lbIcon;
     private javax.swing.JLabel lbMessage;

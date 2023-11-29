@@ -15,7 +15,7 @@ import javax.swing.ImageIcon;
 public class XImage {
 
     public static ImageIcon getAppIcon() {
-        URL url = XImage.class.getResource("/com/edusys/icons/fpt.png");
+        URL url = XImage.class.getResource("/com/yoga/icon/logo30px.png");
         return new ImageIcon(url);
     }
 

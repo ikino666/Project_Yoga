@@ -5,7 +5,7 @@
  */
 package com.yoga.utils;
 
-import com.yoga.entity.NguoiDung;
+import com.yoga.entitys.NguoiDung;
 
 
 public class Auth {

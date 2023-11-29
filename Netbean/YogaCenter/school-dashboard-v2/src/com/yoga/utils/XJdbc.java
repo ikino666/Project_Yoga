@@ -6,7 +6,7 @@ import java.sql.*;
 public class XJdbc {
 
     public static String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-    public static String dburl = "jdbc:sqlserver://;serverName=localhost;databaseName=EDUSYS_ASSM;trustServerCertificate=true";
+    public static String dburl = "jdbc:sqlserver://;serverName=localhost;databaseName=QLTTYoga;trustServerCertificate=true";
     public static String username = "sa";
     public static String password = "system";
 
@@ -55,6 +55,24 @@ public class XJdbc {
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
+        }
+    }
+    
+    public void se(String sql){
+        try {
+            Connection connection = DriverManager.getConnection(dburl, username, password);
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(sql);
+
+            while (resultSet.next()) {
+                String maKHoc = resultSet.getString("MaKhoaHoc");
+            }
+
+            resultSet.close();
+            statement.close();
+            connection.close();
+        } catch (Exception e) {
+            System.out.println(e);
         }
     }
 }

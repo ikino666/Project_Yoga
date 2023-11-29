@@ -41,7 +41,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="z.swing.PanelTransparent" name="bg">
+    <Container class="com.yoga.zswing.PanelTransparent" name="bg">
 
       <Layout>
         <DimensionLayout dim="0">

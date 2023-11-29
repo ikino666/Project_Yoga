@@ -1,28 +1,28 @@
 package com.yoga.main;
 
-import z.components.Header;
-import z.components.Menu;
+import com.yoga.zcomponents.Header;
+import com.yoga.zcomponents.Menu;
 import z.event.EventMenuSelected;
 import z.event.EventShowPopupMenu;
-import com.yoga.form.Form_Quanly_KhachHang;
-import com.yoga.form.Form_Home;
-import com.yoga.form.MainForm;
-import z.swing.MenuItem;
-import z.swing.PopupMenu;
+import com.yoga.ui.Form_Quanly_KhachHang;
+import com.yoga.ui.MainForm;
+import com.yoga.zswing.MenuItem;
+import com.yoga.zswing.PopupMenu;
 import z.swing.icons.GoogleMaterialDesignIcons;
 import z.swing.icons.IconFontSwing;
 import com.formdev.flatlaf.FlatLightLaf;
-import com.yoga.form.Form_GoiDichVu;
-import com.yoga.form.Form_HoaDon;
-import com.yoga.form.Form_KhoSanPham;
-import com.yoga.form.Form_KhuyenMai;
-import com.yoga.form.Form_LichSuHoaDon;
-import com.yoga.form.Form_NguoiDung;
-import com.yoga.form.Form_Quanly_HocVien;
-import com.yoga.form.Form_Quanly_KhoaHoc;
-import com.yoga.form.Form_Quanly_LopHoc;
-import com.yoga.form.Form_SanPham;
-import com.yoga.form.Form_TaiKhoan;
+import com.yoga.ui.Form_GoiDichVu;
+import com.yoga.ui.Form_HoaDon;
+import com.yoga.ui.Form_KhoSanPham;
+import com.yoga.ui.Form_KhuyenMai;
+import com.yoga.ui.Form_LichSuHoaDon;
+import com.yoga.ui.Form_NguoiDung;
+import com.yoga.ui.Form_Quanly_HocVien;
+import com.yoga.ui.Form_Quanly_KhachHang;
+import com.yoga.ui.Form_Quanly_KhoaHoc;
+import com.yoga.ui.Form_Quanly_LopHoc;
+import com.yoga.ui.Form_SanPham;
+import com.yoga.ui.Form_TaiKhoan;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -58,7 +58,10 @@ public class Main extends javax.swing.JFrame {
             @Override
             public void menuSelected(int menuIndex, int subMenuIndex) {
                 System.out.println("Menu Index : " + menuIndex + " SubMenu Index " + subMenuIndex);
-                if (menuIndex == 0) {
+                if (menuIndex == 0) {           //Khách hàng
+                    main.showForm(new Form_Quanly_KhachHang());
+                }
+                if (menuIndex == 1) {
                     if (subMenuIndex == 0) {            //Hóa đơn
                         main.showForm(new Form_HoaDon());
                     } else if (subMenuIndex == 1) {     //Lịch sử hóa đơn
@@ -67,50 +70,41 @@ public class Main extends javax.swing.JFrame {
 //                        main.showForm(new Form_Home());
                     }
                 }
-                if (menuIndex == 1) {
+                if (menuIndex == 2) {
                     if (subMenuIndex == 0) {            //Sản phẩm
                         main.showForm(new Form_SanPham());
                     } else if (subMenuIndex == 1) {     //Kho sản phẩm
                         main.showForm(new Form_KhoSanPham());
-                    } else if (subMenuIndex == 2) {      //Thống kê
-//                        main.showForm(new Form_Home());
                     }
                 }
-                if (menuIndex == 2) {
+                if (menuIndex == 3) {
                     if (subMenuIndex == 0) {            //Gói dịch vụ
                         main.showForm(new Form_GoiDichVu());
                     } else if (subMenuIndex == 1) {     //Khuyến mãi
                         main.showForm(new Form_KhuyenMai());
                     }
                 }
-                if (menuIndex == 3) {
-                    if (subMenuIndex == 0) {            //Khóa học
+                if (menuIndex == 4) {                            //Khóa học
                         main.showForm(new Form_Quanly_KhoaHoc());
-                    } else if (subMenuIndex == 1) {     //Thống kê
-//                        main.showForm(new Form_Home());
-                    }
                 }
-                if (menuIndex == 4) {
+                if (menuIndex == 5) {
                     if (subMenuIndex == 0) {            //Lớp học
                         main.showForm(new Form_Quanly_LopHoc());
                     }  else if (subMenuIndex == 1) {     //Học viên
                         main.showForm(new Form_Quanly_HocVien());
-                    }else if (subMenuIndex == 2) {     //Thống kê
-//                        main.showForm(new Form_Home());
                     }
                 }
-                if (menuIndex == 5) {
-                    if (subMenuIndex == 0) {            //Khách hàng
-                        main.showForm(new Form_Quanly_KhachHang());
-
+                if (menuIndex == 6) {
+                    if (subMenuIndex == 0) {            //Thống kê
+//                        main.showForm(new Form_Quanly_KhachHang());
                     } else if (subMenuIndex == 1) {     //Thống kê
 //                        main.showForm(new Form_Home());
                     }
                 }
-                if (menuIndex == 6) {           //Người dùng
+                if (menuIndex == 7) {           //Người dùng
                     main.showForm(new Form_NguoiDung());
                 }
-                if (menuIndex == 7) {           //Tài khoản
+                if (menuIndex == 8) {           //Tài khoản
                     main.showForm(new Form_TaiKhoan());
                 }
             }
@@ -174,7 +168,7 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        bg = new z.swing.PanelTransparent();
+        bg = new com.yoga.zswing.PanelTransparent();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -252,6 +246,6 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private z.swing.PanelTransparent bg;
+    private com.yoga.zswing.PanelTransparent bg;
     // End of variables declaration//GEN-END:variables
 }
